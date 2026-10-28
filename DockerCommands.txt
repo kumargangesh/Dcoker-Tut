@@ -1,0 +1,36 @@
+#. docker build -t image_name .
+
+command to build a docker image. Here:
+
+-t: means to give docker image a name 
+.: refers to current working directory, so current directory will be dockerize to particular image 
+
+
+#. docker images
+
+to check all images on docker
+
+
+#. docker rmi images_name
+
+will remove image from docker
+
+
+#. docker run -d -p HOST_PORT:CONTAINER_PORT --name CONTAINER_NAME DOCKER_IMAGE_NAME
+
+to run a docker image. The above command will first load docker image then convert it to container and will load it
+
+
+#. docker ps
+
+list all containers present in docker
+
+
+#. docker stop CONTAINER_NAME
+
+will stop the container
+
+
+#. docker rm CONTAINER_NAME
+
+will delete a particular container
