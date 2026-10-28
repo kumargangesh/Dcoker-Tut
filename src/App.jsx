@@ -14,7 +14,12 @@ function App() {
   return (
    <div>
     <input type="text" value={count} onChange={handleName} />
-    <p>Hello {count} welcome to React-Docker-Demo</p>
+    {
+      count.length > 1 ?
+        <p>Hello {count} welcome to React-Docker-Demo</p>
+      :
+        <p>No name entered</p>
+    }
    </div>
   )
 }
