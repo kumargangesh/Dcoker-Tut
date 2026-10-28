@@ -1,4 +1,4 @@
-#. docker build -t image_name .
+#. docker build -t image_name:version .
 
 command to build a docker image. Here:
 
@@ -16,7 +16,7 @@ to check all images on docker
 will remove image from docker
 
 
-#. docker run -d -p HOST_PORT:CONTAINER_PORT --name CONTAINER_NAME DOCKER_IMAGE_NAME
+#. docker run -d -p HOST_PORT:CONTAINER_PORT --name CONTAINER_NAME DOCKER_IMAGE_NAME:version
 
 to run a docker image. The above command will first load docker image then convert it to container and will load it
 
