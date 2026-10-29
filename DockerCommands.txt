@@ -21,6 +21,10 @@ will remove image from docker
 to run a docker image. The above command will first load docker image then convert it to container and will load it
 
 
+#. docker run -it -p HOST_PORT:CONTAINER_PORT CONTAINER_NAME DOCKER_NAME:version 
+
+-it: stands for interactive terminal, if we need to take input then we use this
+
 #. docker ps
 
 list all containers present in docker
@@ -34,3 +38,23 @@ will stop the container
 #. docker rm CONTAINER_NAME
 
 will delete a particular container
+
+
+#. docker push insomnia200/react-apps:1
+
+this command will push docker image to docker hub, but make sure local build image name and image repo name is docker hub should be same, like above
+
+
+#. docker pull insomnia200/react-apps:1
+
+command to pull back image stored in docker hub
+
+
+@. Volume in Docker:
+
+sometimes, we need to store our data as well as use that data for furthure use example: File Handling, etc then we use Volume in Docker:
+
+docker build -t --rm -v /react-docker/ IMAGE_NAME .
+
+here -v for Volume making and make sure that, name of the volume should be same as name of folder where you created Docker while writing DockerFile. i.e. -> /react-docker/
+
